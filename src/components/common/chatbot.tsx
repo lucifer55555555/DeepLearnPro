@@ -120,9 +120,10 @@ export function Chatbot() {
       const response = await aiChatbotAssistance(aiInput);
       const assistantMessage: Message = { role: 'assistant', content: response.answer };
       setMessages((prev) => [...prev, assistantMessage]);
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error getting AI response:', error);
-      const errorMessage: Message = { role: 'assistant', content: '⚠️ Sorry, I encountered an error. Please try again.' };
+      const errorText = error.message || 'Unknown error';
+      const errorMessage: Message = { role: 'assistant', content: `⚠️ **Error:** ${errorText}\n\nPlease check your Vercel logs for more details.` };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
       setIsLoading(false);
