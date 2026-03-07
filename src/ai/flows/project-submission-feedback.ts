@@ -34,7 +34,7 @@ export async function projectSubmissionFeedback(input: ProjectSubmissionFeedback
 
 const prompt = ai.definePrompt({
   name: 'projectSubmissionFeedbackPrompt',
-  model: 'googleai/gemini-1.5-flash',
+  model: 'googleai/gemini-2.5-flash',
   input: { schema: ProjectSubmissionFeedbackInputSchema },
   output: { schema: ProjectSubmissionFeedbackOutputSchema },
   prompt: `You are an expert, friendly, and encouraging code reviewer for a machine learning education platform. Your task is to provide a detailed, structured, and constructive evaluation of a user's project submission against the official solution.

@@ -59,7 +59,7 @@ Answer the user's question about machine learning or deep learning accurately an
 
 const prompt = ai.definePrompt({
   name: 'aiMentorPrompt',
-  model: 'googleai/gemini-1.5-flash',
+  model: 'googleai/gemini-2.5-flash',
   input: { schema: AIChatbotAssistanceInputSchema },
   output: { schema: AIChatbotAssistanceOutputSchema },
   prompt: `You are DeepLearn Pro's AI Learning Mentor — an expert, encouraging deep learning coach.
