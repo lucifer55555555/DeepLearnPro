@@ -36,7 +36,7 @@ export async function getAdaptiveRecommendation(input: AdaptiveRecommendationInp
 
 const prompt = ai.definePrompt({
     name: 'adaptiveRecommendationPrompt',
-    model: 'googleai/gemini-2.5-flash',
+    model: 'googleai/gemini-1.5-flash',
     input: { schema: AdaptiveRecommendationInputSchema },
     output: { schema: AdaptiveRecommendationOutputSchema },
     prompt: `You are DeepLearn Pro's adaptive learning engine. Analyze the learner's profile and provide a personalized recommendation.
