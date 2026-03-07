@@ -87,8 +87,16 @@ const aiChatbotAssistanceFlow = ai.defineFlow(
     outputSchema: AIChatbotAssistanceOutputSchema,
   },
   async input => {
-    const modeInstruction = modeInstructions[input.mode] || modeInstructions.general;
-    const { output } = await prompt({ ...input, modeInstruction } as any);
-    return output!;
+    try {
+      const modeInstruction = modeInstructions[input.mode] || modeInstructions.general;
+      const { output } = await prompt({ ...input, modeInstruction } as any);
+      if (!output) throw new Error('AI response was empty.');
+      return output;
+    } catch (error: any) {
+      console.error('Genkit Flow Error (aiChatbotAssistanceFlow):', error);
+      // Return a structured error that the client can display if needed, 
+      // but also throw to trigger a 500 so we can see it in logs.
+      throw new Error(`AI Mentor failed: ${error.message || 'Unknown error'}`);
+    }
   }
 );
