@@ -33,7 +33,7 @@ export async function personalizedLearningRecommendation(input: PersonalizedLear
 
 const prompt = ai.definePrompt({
   name: 'personalizedLearningRecommendationPrompt',
-  model: 'googleai/gemini-1.5-flash-latest',
+  model: 'googleai/gemini-2.5-flash',
   input: { schema: PersonalizedLearningRecommendationInputSchema },
   output: { schema: PersonalizedLearningRecommendationOutputSchema },
   prompt: `You are an AI career coach for aspiring machine learning engineers. Your goal is to provide a personalized recommendation for what a learner, {{userName}}, should do next.

@@ -1,0 +1,495 @@
+﻿Testing model: gemini-1.5-flash
+node.exe : [FAIL] 
+gemini-1.5-flash: 
+NOT_FOUND: Model 
+'gemini-1.5-flash' not 
+found
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: ([FAIL] gemini   
+ -1...lash' not fou    
+nd:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+Testing model: googleai/gemini-1.5-flash
+GenkitError: UNKNOWN: 
+Error fetching from htt
+ps://generativelanguage
+.googleapis.com/v1beta/
+models/gemini-1.5-flash
+:generateContent: [404 
+Not Found] models/gemin
+i-1.5-flash is not 
+found for API version 
+v1beta, or is not 
+supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.
+    at makeRequest (C:\
+Users\Hp\Downloads\deep
+learn-pro\node_modules\
+@genkit-ai\google-genai
+\src\googleai\client.ts
+:375:13)
+    at process.processT
+icksAndRejections (node
+:internal/process/task_
+queues:105:5)
+    at async 
+generateContent (C:\Use
+rs\Hp\Downloads\deeplea
+rn-pro\node_modules\@ge
+nkit-ai\google-genai\sr
+c\googleai\client.ts:94
+:20)
+    at async 
+callGemini (C:\Users\Hp
+\Downloads\deeplearn-pr
+o\node_modules\@genkit-
+ai\google-genai\src\goo
+gleai\gemini.ts:767:22)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\google-genai\src\go
+ogleai\gemini.ts:830:11
+)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\core\src\action.ts:
+380:26)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\core\src\tracing\in
+strumentation.ts:121:24
+)
+    at async 
+runInNewSpan (C:\Users\
+Hp\Downloads\deeplearn-
+pro\node_modules\@genki
+t-ai\core\src\tracing\i
+nstrumentation.ts:105:1
+0)
+    at async AsyncFunct
+ion.actionFn.run (C:\Us
+ers\Hp\Downloads\deeple
+arn-pro\node_modules\@g
+enkit-ai\core\src\actio
+n.ts:332:18)
+    at async dispatch (
+C:\Users\Hp\Downloads\d
+eeplearn-pro\node_modul
+es\@genkit-ai\core\src\
+action.ts:255:24) {
+  source: undefined,
+  status: 'UNKNOWN',
+  detail: undefined,
+  code: 500,
+  originalMessage: 
+'Error fetching from ht
+tps://generativelanguag
+e.googleapis.com/v1beta
+/models/gemini-1.5-flas
+h:generateContent: 
+[404 Not Found] models/
+gemini-1.5-flash is 
+not found for API 
+version v1beta, or is 
+not supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.'
+}
+[FAIL] googleai/gemini-
+1.5-flash: UNKNOWN: 
+Error fetching from htt
+ps://generativelanguage
+.googleapis.com/v1beta/
+models/gemini-1.5-flash
+:generateContent: [404 
+Not Found] models/gemin
+i-1.5-flash is not 
+found for API version 
+v1beta, or is not 
+supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.
+Testing model: googleai/gemini-1.5-flash-latest
+GenkitError: UNKNOWN: 
+Error fetching from htt
+ps://generativelanguage
+.googleapis.com/v1beta/
+models/gemini-1.5-flash
+-latest:generateContent
+: [404 Not Found] model
+s/gemini-1.5-flash-late
+st is not found for 
+API version v1beta, or 
+is not supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.
+    at makeRequest (C:\
+Users\Hp\Downloads\deep
+learn-pro\node_modules\
+@genkit-ai\google-genai
+\src\googleai\client.ts
+:375:13)
+    at process.processT
+icksAndRejections (node
+:internal/process/task_
+queues:105:5)
+    at async 
+generateContent (C:\Use
+rs\Hp\Downloads\deeplea
+rn-pro\node_modules\@ge
+nkit-ai\google-genai\sr
+c\googleai\client.ts:94
+:20)
+    at async 
+callGemini (C:\Users\Hp
+\Downloads\deeplearn-pr
+o\node_modules\@genkit-
+ai\google-genai\src\goo
+gleai\gemini.ts:767:22)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\google-genai\src\go
+ogleai\gemini.ts:830:11
+)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\core\src\action.ts:
+380:26)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\core\src\tracing\in
+strumentation.ts:121:24
+)
+    at async 
+runInNewSpan (C:\Users\
+Hp\Downloads\deeplearn-
+pro\node_modules\@genki
+t-ai\core\src\tracing\i
+nstrumentation.ts:105:1
+0)
+    at async AsyncFunct
+ion.actionFn.run (C:\Us
+ers\Hp\Downloads\deeple
+arn-pro\node_modules\@g
+enkit-ai\core\src\actio
+n.ts:332:18)
+    at async dispatch (
+C:\Users\Hp\Downloads\d
+eeplearn-pro\node_modul
+es\@genkit-ai\core\src\
+action.ts:255:24) {
+  source: undefined,
+  status: 'UNKNOWN',
+  detail: undefined,
+  code: 500,
+  originalMessage: 
+'Error fetching from ht
+tps://generativelanguag
+e.googleapis.com/v1beta
+/models/gemini-1.5-flas
+h-latest:generateConten
+t: [404 Not Found] mode
+ls/gemini-1.5-flash-lat
+est is not found for 
+API version v1beta, or 
+is not supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.'
+}
+[FAIL] googleai/gemini-
+1.5-flash-latest: 
+UNKNOWN: Error 
+fetching from https://g
+enerativelanguage.googl
+eapis.com/v1beta/models
+/gemini-1.5-flash-lates
+t:generateContent: 
+[404 Not Found] models/
+gemini-1.5-flash-latest
+ is not found for API 
+version v1beta, or is 
+not supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.
+Testing model: googleai/gemini-1.5-flash-001
+GenkitError: UNKNOWN: 
+Error fetching from htt
+ps://generativelanguage
+.googleapis.com/v1beta/
+models/gemini-1.5-flash
+-001:generateContent: 
+[404 Not Found] models/
+gemini-1.5-flash-001 
+is not found for API 
+version v1beta, or is 
+not supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.
+    at makeRequest (C:\
+Users\Hp\Downloads\deep
+learn-pro\node_modules\
+@genkit-ai\google-genai
+\src\googleai\client.ts
+:375:13)
+    at process.processT
+icksAndRejections (node
+:internal/process/task_
+queues:105:5)
+    at async 
+generateContent (C:\Use
+rs\Hp\Downloads\deeplea
+rn-pro\node_modules\@ge
+nkit-ai\google-genai\sr
+c\googleai\client.ts:94
+:20)
+    at async 
+callGemini (C:\Users\Hp
+\Downloads\deeplearn-pr
+o\node_modules\@genkit-
+ai\google-genai\src\goo
+gleai\gemini.ts:767:22)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\google-genai\src\go
+ogleai\gemini.ts:830:11
+)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\core\src\action.ts:
+380:26)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\core\src\tracing\in
+strumentation.ts:121:24
+)
+    at async 
+runInNewSpan (C:\Users\
+Hp\Downloads\deeplearn-
+pro\node_modules\@genki
+t-ai\core\src\tracing\i
+nstrumentation.ts:105:1
+0)
+    at async AsyncFunct
+ion.actionFn.run (C:\Us
+ers\Hp\Downloads\deeple
+arn-pro\node_modules\@g
+enkit-ai\core\src\actio
+n.ts:332:18)
+    at async dispatch (
+C:\Users\Hp\Downloads\d
+eeplearn-pro\node_modul
+es\@genkit-ai\core\src\
+action.ts:255:24) {
+  source: undefined,
+  status: 'UNKNOWN',
+  detail: undefined,
+  code: 500,
+  originalMessage: 
+'Error fetching from ht
+tps://generativelanguag
+e.googleapis.com/v1beta
+/models/gemini-1.5-flas
+h-001:generateContent: 
+[404 Not Found] models/
+gemini-1.5-flash-001 
+is not found for API 
+version v1beta, or is 
+not supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.'
+}
+[FAIL] googleai/gemini-
+1.5-flash-001: 
+UNKNOWN: Error 
+fetching from https://g
+enerativelanguage.googl
+eapis.com/v1beta/models
+/gemini-1.5-flash-001:g
+enerateContent: [404 
+Not Found] models/gemin
+i-1.5-flash-001 is not 
+found for API version 
+v1beta, or is not 
+supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.
+Testing model: googleai/gemini-1.5-flash-002
+GenkitError: UNKNOWN: 
+Error fetching from htt
+ps://generativelanguage
+.googleapis.com/v1beta/
+models/gemini-1.5-flash
+-002:generateContent: 
+[404 Not Found] models/
+gemini-1.5-flash-002 
+is not found for API 
+version v1beta, or is 
+not supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.
+    at makeRequest (C:\
+Users\Hp\Downloads\deep
+learn-pro\node_modules\
+@genkit-ai\google-genai
+\src\googleai\client.ts
+:375:13)
+    at process.processT
+icksAndRejections (node
+:internal/process/task_
+queues:105:5)
+    at async 
+generateContent (C:\Use
+rs\Hp\Downloads\deeplea
+rn-pro\node_modules\@ge
+nkit-ai\google-genai\sr
+c\googleai\client.ts:94
+:20)
+    at async 
+callGemini (C:\Users\Hp
+\Downloads\deeplearn-pr
+o\node_modules\@genkit-
+ai\google-genai\src\goo
+gleai\gemini.ts:767:22)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\google-genai\src\go
+ogleai\gemini.ts:830:11
+)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\core\src\action.ts:
+380:26)
+    at async 
+<anonymous> (C:\Users\H
+p\Downloads\deeplearn-p
+ro\node_modules\@genkit
+-ai\core\src\tracing\in
+strumentation.ts:121:24
+)
+    at async 
+runInNewSpan (C:\Users\
+Hp\Downloads\deeplearn-
+pro\node_modules\@genki
+t-ai\core\src\tracing\i
+nstrumentation.ts:105:1
+0)
+    at async AsyncFunct
+ion.actionFn.run (C:\Us
+ers\Hp\Downloads\deeple
+arn-pro\node_modules\@g
+enkit-ai\core\src\actio
+n.ts:332:18)
+    at async dispatch (
+C:\Users\Hp\Downloads\d
+eeplearn-pro\node_modul
+es\@genkit-ai\core\src\
+action.ts:255:24) {
+  source: undefined,
+  status: 'UNKNOWN',
+  detail: undefined,
+  code: 500,
+  originalMessage: 
+'Error fetching from ht
+tps://generativelanguag
+e.googleapis.com/v1beta
+/models/gemini-1.5-flas
+h-002:generateContent: 
+[404 Not Found] models/
+gemini-1.5-flash-002 
+is not found for API 
+version v1beta, or is 
+not supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.'
+}
+[FAIL] googleai/gemini-
+1.5-flash-002: 
+UNKNOWN: Error 
+fetching from https://g
+enerativelanguage.googl
+eapis.com/v1beta/models
+/gemini-1.5-flash-002:g
+enerateContent: [404 
+Not Found] models/gemin
+i-1.5-flash-002 is not 
+found for API version 
+v1beta, or is not 
+supported for 
+generateContent. Call 
+ListModels to see the 
+list of available 
+models and their 
+supported methods.
+Testing model: googleai/gemini-2.5-flash
+[SUCCESS] googleai/gemini-2.5-flash works!

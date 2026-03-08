@@ -15,7 +15,7 @@ async function verifyApiKey() {
     try {
         const response = await ai.generate({
             // We must use a recognized model format 'plugin/model'
-            model: 'googleai/gemini-1.5-flash-latest',
+            model: 'googleai/gemini-2.5-flash',
             prompt: 'Respond with "API is working!"',
         });
         console.log('--- SUCCESS ---');
