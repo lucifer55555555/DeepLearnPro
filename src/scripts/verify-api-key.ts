@@ -5,10 +5,10 @@ config(); // Load .env file
 import { ai } from '../ai/genkit';
 
 async function verifyApiKey() {
-    console.log('Verifying GEMINI_API_KEY from .env...');
-    if (!process.env.GEMINI_API_KEY) {
+    console.log('Verifying VITE_GEMINI_API_KEY from .env...');
+    if (!process.env.VITE_GEMINI_API_KEY) {
         console.error('--- ERROR ---');
-        console.error('GEMINI_API_KEY not found in .env file.');
+        console.error('VITE_GEMINI_API_KEY not found in .env file.');
         process.exit(1);
     }
 
@@ -20,12 +20,12 @@ async function verifyApiKey() {
         });
         console.log('--- SUCCESS ---');
         console.log('AI Response:', response.text);
-        console.log('Your GEMINI_API_KEY is VALID.');
+        console.log('Your VITE_GEMINI_API_KEY is VALID.');
     } catch (error: any) {
         console.error('--- ERROR ---');
         console.error('Error verifying API key:', error.message);
         if (error.message.includes('API_KEY_INVALID') || error.message.includes('403')) {
-            console.error('The provided GEMINI_API_KEY appears to be INVALID or has insufficient permissions.');
+            console.error('The provided VITE_GEMINI_API_KEY appears to be INVALID or has insufficient permissions.');
         } else {
             console.error('Unexpected Error:', error);
         }
