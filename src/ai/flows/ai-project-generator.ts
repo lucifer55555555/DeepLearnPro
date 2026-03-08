@@ -33,7 +33,7 @@ export async function generateAiProject(input: AIProjectGeneratorInput): Promise
 
 const prompt = ai.definePrompt({
     name: 'aiProjectGeneratorPrompt',
-    model: 'googleai/gemini-1.5-flash',
+    model: 'googleai/gemini-1.5-flash-latest',
     input: { schema: AIProjectGeneratorInputSchema },
     output: { schema: AIProjectGeneratorOutputSchema },
     prompt: `You are an expert Data Science Project Manager. Generate a unique, portfolio-ready project idea for a student.

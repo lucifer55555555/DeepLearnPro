@@ -31,7 +31,7 @@ export async function personalizedQuizFeedback(input: PersonalizedQuizFeedbackIn
 
 const prompt = ai.definePrompt({
   name: 'personalizedQuizFeedbackPrompt',
-  model: 'googleai/gemini-1.5-flash',
+  model: 'googleai/gemini-1.5-flash-latest',
   input: { schema: PersonalizedQuizFeedbackInputSchema },
   output: { schema: PersonalizedQuizFeedbackOutputSchema },
   prompt: `You are an AI-powered learning assistant that provides personalized feedback to students based on their quiz performance.
